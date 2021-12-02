@@ -1,0 +1,13 @@
+CREATE TABLE student_progress(recNo INT, Stu_1 VARCHAR(),Stu_2 VARCHAR(),Stu_3 VARCHAR(),Stu_4 VARCHAR(),Stu_5 VARCHAR())
+
+
+CREATE TABLE student_progress(recNo INT PRIMARY KEY NOT NULL AUTO_INCREMENT, Stu_1 VARCHAR(50),Stu_2 VARCHAR(50),Stu_3 VARCHAR(50),Stu_4 VARCHAR(50),Stu_5 VARCHAR(50))
+
+
+----------------------------Marks_table-------------------
+
+CREATE TABLE student_marks(recNo INT PRIMARY KEY NOT NULL AUTO_INCREMENT, Mark_1 VARCHAR(50),Mark_2 VARCHAR(50),Mark_3 VARCHAR(50),Mark_4 VARCHAR(50),Mark_5 VARCHAR(50),FOREIGN KEY(recNo) REFERENCES student_progress(recNo)) 
+
+#######################lottery question##############
+
+CREATE TABLE Play_History(userID int, userName VARCHAR(50),userNumbers VARCHAR(50),lottNumbers VARCHAR(50),winMatches VARCHAR(50))
